@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTip(_ sender: AnyObject) {
         
-        let tipPercentages = [0.18, 0.20, 0.22]
-        
         let bill = Double(billField.text!) ?? 0
+        
+        let tipPercentages = [0.18, 0.20, 0.22]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = tip + bill
         
@@ -36,7 +36,21 @@ class ViewController: UIViewController {
         // Open keyboard automatically when view loads
         billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
+        let bill = Double(billField.text!) ?? 0
+        
+        let defaultsChanged = UserDefaults.standard.bool(forKey: "defaultsChanged")
+        //print (defaultsChanged)
+        
+        if (defaultsChanged || bill == 0) {
+            let tipIndexValue = UserDefaults.standard.integer(forKey: "tipIndex")
+            tipControl.selectedSegmentIndex = tipIndexValue
+            UserDefaults.standard.set(false, forKey: "defaultsChanged")
+        }
+        self.calculateTip(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,9 +58,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
-// This is a comment
-// Comments are useful in determining or writing code that won't be executed
 

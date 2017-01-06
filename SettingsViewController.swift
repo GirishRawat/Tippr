@@ -10,17 +10,31 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+
+    @IBOutlet weak var tipControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let tipIndexValue = UserDefaults.standard.integer(forKey: "tipIndex")
+        //print (tipIndexValue)
+        tipControl.selectedSegmentIndex = tipIndexValue
+    }
+    @IBAction func dismissModal(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func defaultTipChanged(_ sender: AnyObject) {
+        let tipIndex = tipControl.selectedSegmentIndex
+        //print ("Tip setting changed")
+        UserDefaults.standard.set(tipIndex, forKey: "tipIndex")
+        UserDefaults.standard.set(true, forKey: "defaultsChanged")
+        UserDefaults.standard.synchronize()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
