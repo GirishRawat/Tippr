@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         formatter.numberStyle = .currency
         formatter.groupingSeparator = ","
         let currencysymbol = Locale.current.currencySymbol
+        billField.placeholder = currencysymbol
         
         tipLabel.text = String(format: (currencysymbol ?? "$") + "%.2f" , tip)
         totalLabel.text = formatter.string(from: total)
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
     
     private func highlightView() {
         UIView.animate(withDuration: 0.3, animations: {
-            let offWhite = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+            let offWhite = UIColor(red: 203.0/255.0, green: 243.0/255.0, blue: 240.0/255.0, alpha: 1.0)
             self.upperView.backgroundColor = offWhite
         })
     }
@@ -79,7 +80,7 @@ class ViewController: UIViewController {
         if(currentTimestamp - lastSessionTime < 600) { // 10 minutes
             print (currentTimestamp)
             print (lastSessionTime)
-            print ("Less than 10 minute")
+            print ("Less than 10 minutes")
             if (lastSavedTip != 0) {
                 billField.text = String(lastSavedTip)
                 self.calculateTip(self)
