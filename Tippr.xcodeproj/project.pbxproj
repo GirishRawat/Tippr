@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76B551361E1ECA8900D2DBB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B551351E1ECA8900D2DBB3 /* SettingsViewController.swift */; };
+		76B5513A1E1F74A300D2DBB3 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B551391E1F74A300D2DBB3 /* Settings.png */; };
 		76F3925F1E1E40D600B4ECC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3925E1E1E40D600B4ECC8 /* AppDelegate.swift */; };
 		76F392611E1E40D600B4ECC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F392601E1E40D600B4ECC8 /* ViewController.swift */; };
 		76F392641E1E40D600B4ECC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F392621E1E40D600B4ECC8 /* Main.storyboard */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76B551351E1ECA8900D2DBB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		76B551351E1ECA8900D2DBB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
+		76B551391E1F74A300D2DBB3 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = SOURCE_ROOT; };
 		76F3925B1E1E40D600B4ECC8 /* Tippr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F3925E1E1E40D600B4ECC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F392601E1E40D600B4ECC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +81,6 @@
 		76F392521E1E40D600B4ECC8 = {
 			isa = PBXGroup;
 			children = (
-				76B551351E1ECA8900D2DBB3 /* SettingsViewController.swift */,
 				76F3925D1E1E40D600B4ECC8 /* Tippr */,
 				76F392721E1E40D700B4ECC8 /* TipprTests */,
 				76F3927D1E1E40D700B4ECC8 /* TipprUITests */,
@@ -100,7 +101,9 @@
 		76F3925D1E1E40D600B4ECC8 /* Tippr */ = {
 			isa = PBXGroup;
 			children = (
+				76B551391E1F74A300D2DBB3 /* Settings.png */,
 				76F3925E1E1E40D600B4ECC8 /* AppDelegate.swift */,
+				76B551351E1ECA8900D2DBB3 /* SettingsViewController.swift */,
 				76F392601E1E40D600B4ECC8 /* ViewController.swift */,
 				76F392621E1E40D600B4ECC8 /* Main.storyboard */,
 				76F392651E1E40D700B4ECC8 /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B5513A1E1F74A300D2DBB3 /* Settings.png in Resources */,
 				76F392691E1E40D700B4ECC8 /* LaunchScreen.storyboard in Resources */,
 				76F392661E1E40D700B4ECC8 /* Assets.xcassets in Resources */,
 				76F392641E1E40D600B4ECC8 /* Main.storyboard in Resources */,
