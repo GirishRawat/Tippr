@@ -22,6 +22,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Keyboard opens automatically after dismissing Settings modal
+* [x] Improved readability by using  
 
 ## Video Walkthrough 
 
