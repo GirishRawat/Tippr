@@ -1,4 +1,4 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *Tippr*
 
 **Tippr** is a tip calculator application for iOS.
 
@@ -22,7 +22,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Keyboard opens after dismissing the Settings modal
-* [x] Improved readability by toning down the contrast.  
+* [x] Improved readability by toning down the contrast.
+* [x] Improved UI by adding color and label placeholders.
 
 ## Video Walkthrough 
 
