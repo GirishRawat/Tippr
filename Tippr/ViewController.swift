@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var upperView: UIView!
 
     @IBAction func onTap(_ sender: Any) {
         //print("Hello")
@@ -34,6 +35,27 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: (currencysymbol ?? "$") + "%.2f" , tip)
         totalLabel.text = formatter.string(from: total)
         
+        if (billField.text?.isEmpty)! {
+            degradeView(animated: true)
+        } else {
+            highlightView()
+        }
+    }
+    
+    private func degradeView(animated: Bool) {
+        if animated {
+            UIView.animate(withDuration: 0.3, animations: {
+                let pureWhite = UIColor(red: 254.0/255.0, green: 254.0/255.0, blue: 254.0/255.0, alpha: 1.0)
+                self.upperView.backgroundColor = pureWhite
+            })
+        }
+    }
+    
+    private func highlightView() {
+        UIView.animate(withDuration: 0.3, animations: {
+            let offWhite = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+            self.upperView.backgroundColor = offWhite
+        })
     }
     
     override func viewDidDisappear(_ animated: Bool) {

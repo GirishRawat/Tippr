@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" id="fUI-m6-VB9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="right" minimumFontSize="17" id="WIC-y6-94f">
-                                        <rect key="frame" x="16" y="121" width="343" height="96"/>
+                                        <rect key="frame" x="16" y="101" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="U8G-yB-FDF">
-                                        <rect key="frame" x="16" y="256" width="343" height="29"/>
+                                        <rect key="frame" x="16" y="226" width="343" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
                                             <segment title="18%"/>
@@ -54,35 +54,35 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="Neo-5T-yn6">
-                                <rect key="frame" x="0.0" y="291" width="375" height="376"/>
+                                <rect key="frame" x="0.0" y="268" width="375" height="399"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87s-hb-KT0">
-                                        <rect key="frame" x="38" y="11" width="321" height="21"/>
+                                        <rect key="frame" x="38" y="26" width="321" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eey-Rb-SQP">
-                                        <rect key="frame" x="54" y="45" width="305" height="90"/>
+                                        <rect key="frame" x="54" y="60" width="305" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M7d-Ju-RZK">
-                                        <rect key="frame" x="22" y="8" width="11" height="21"/>
+                                        <rect key="frame" x="22" y="23" width="11" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" id="Qz9-BI-TCI">
-                                        <rect key="frame" x="16" y="61" width="55" height="40"/>
+                                        <rect key="frame" x="16" y="76" width="55" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
                                         <nil key="textColor"/>
@@ -106,6 +106,7 @@
                         <outlet property="tipControl" destination="U8G-yB-FDF" id="57D-it-8hp"/>
                         <outlet property="tipLabel" destination="87s-hb-KT0" id="nM3-sj-OZX"/>
                         <outlet property="totalLabel" destination="eey-Rb-SQP" id="02f-SP-D0w"/>
+                        <outlet property="upperView" destination="fUI-m6-VB9" id="m9d-tt-9q3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,13 +127,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" id="PGr-Jt-52W">
-                                <rect key="frame" x="0.0" y="599" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i67-Yp-crR">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -162,7 +163,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="hg2-8r-Idl">
-                                        <rect key="frame" x="16" y="168" width="331" height="29"/>
+                                        <rect key="frame" x="16" y="168" width="342" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
                                             <segment title="18%"/>
@@ -174,6 +175,13 @@
                                             <action selector="defaultTipChanged:" destination="Akg-nI-ytB" eventType="valueChanged" id="GuH-yT-2Ot"/>
                                         </connections>
                                     </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Follow " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WWq-TO-Ie1">
+                                        <rect key="frame" x="16" y="222" width="331" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
