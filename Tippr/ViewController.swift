@@ -48,6 +48,10 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.3, animations: {
                 let pureWhite = UIColor(red: 254.0/255.0, green: 254.0/255.0, blue: 254.0/255.0, alpha: 1.0)
                 self.upperView.backgroundColor = pureWhite
+                self.tipLabel.text = "Tip"
+                self.tipLabel.alpha = 0.4
+                self.totalLabel.text = "Total"
+                self.totalLabel.alpha = 0.4
             })
         }
     }
@@ -56,6 +60,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3, animations: {
             let offWhite = UIColor(red: 203.0/255.0, green: 243.0/255.0, blue: 240.0/255.0, alpha: 1.0)
             self.upperView.backgroundColor = offWhite
+            self.tipLabel.alpha = 1.0
+            self.totalLabel.alpha = 1.0
         })
     }
     
