@@ -24,6 +24,7 @@ The following **additional** features are implemented:
 * [x] Keyboard opens after dismissing the Settings modal
 * [x] Improved readability by toning down the contrast.
 * [x] Improved UI by adding color and label placeholders.
+* [x] Added Icons and Launch Screen
 
 ## Video Walkthrough 
 

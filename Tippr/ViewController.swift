@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         let tipPercentages = [0.18, 0.20, 0.22]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = tip + bill as NSNumber
+        let total = tip + bill
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.groupingSeparator = ","
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         billField.placeholder = currencysymbol
         
         tipLabel.text = String(format: (currencysymbol ?? "$") + "%.2f" , tip)
-        totalLabel.text = formatter.string(from: total)
+        totalLabel.text = String(format: (currencysymbol ?? "$") + "%.2f" , total)
         
         if (billField.text?.isEmpty)! {
             degradeView(animated: true)
