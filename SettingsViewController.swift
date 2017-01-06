@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         let tipIndexValue = UserDefaults.standard.integer(forKey: "tipIndex")
         //print (tipIndexValue)
         tipControl.selectedSegmentIndex = tipIndexValue
+        
     }
     @IBAction func dismissModal(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
