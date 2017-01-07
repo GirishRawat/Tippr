@@ -35,8 +35,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+I am a designer and this was my first mobile application. Had to go through a couple of introductry iOS explaination videos from Udemy to understand different parts of Xcode and Swift.
+UI Animations were a tough nut to crack. Had to go through the official Swift documentation and couple of blog posts in order to undertand it. 
 
 ## License
 
